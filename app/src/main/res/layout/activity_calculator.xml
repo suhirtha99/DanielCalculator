@@ -48,11 +48,11 @@
             android:id="@+id/displayBinary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_below="@+id/decimalText"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="20dp"
             android:labelFor="@+id/binaryText"
-            android:textSize="24sp" />
+            android:textSize="36sp" />
 
         <Button
             android:id="@+id/clear"
@@ -63,35 +63,37 @@
             android:layout_marginTop="67dp"
             android:text="@string/clear" />
 
-        <EditText
+        <TextView
+            android:id="@+id/displayDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/binaryText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:labelFor="@+id/decimalText"
+            android:textSize="36sp" />
+
+        <TextView
             android:id="@+id/binaryText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="17dp"
-            android:inputType="textPersonName"
-            android:text="@string/binary" />
+            android:layout_marginTop="22dp"
+            android:text="@string/binary"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/decimalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/displayBinary"
+            android:layout_below="@+id/displayDecimal"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="11dp"
-            android:inputType="textPersonName"
-            android:text="@string/decimal" />
-
-        <TextView
-            android:id="@+id/displayDecimal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/decimalText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
-            android:labelFor="@+id/decimalText"
-            android:textSize="36sp" />
+            android:layout_marginTop="32dp"
+            android:text="@string/decimal"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

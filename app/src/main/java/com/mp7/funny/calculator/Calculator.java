@@ -28,6 +28,8 @@ public class Calculator extends AppCompatActivity {
             inputString = inputString + "1";
             input = Integer.parseInt(inputString,2);
             outputString = Integer.toString(input);
+            displayBinary.setText(outputString);
+            displayDecimal.setText(inputString);
         }
     });
     zero.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,8 @@ public class Calculator extends AppCompatActivity {
             inputString = inputString + "0";
             input = Integer.parseInt(inputString,2);
             outputString = Integer.toString(input);
+            displayBinary.setText(outputString);
+            displayDecimal.setText(inputString);
         }
     });
     clear.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +49,8 @@ public class Calculator extends AppCompatActivity {
             output = 0b0;
             inputString = "";
             outputString = "";
+            displayBinary.setText(outputString);
+            displayDecimal.setText(inputString);
         }
     });
     }
