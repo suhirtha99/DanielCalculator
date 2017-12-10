@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
     android:minHeight="0dp"
     android:minWidth="0dp"
     tools:context="com.mp7.funny.calculator.Calculator">
@@ -30,7 +31,9 @@
             android:layout_centerVertical="false"
             android:layout_marginEnd="68dp"
             android:layout_toStartOf="@+id/button0"
+            android:background="?attr/colorAccent"
             android:text="@string/_1"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="36sp" />
 
         <Button
@@ -41,17 +44,21 @@
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="200dp"
             android:layout_marginEnd="73dp"
+            android:background="@color/colorAccent"
             android:text="@string/_0"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="36sp" />
 
         <TextView
             android:id="@+id/displayBinary"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/decimalText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:background="@color/Pink_Transparent"
             android:labelFor="@+id/binaryText"
+            android:textAlignment="center"
             android:textSize="36sp" />
 
         <Button
@@ -61,16 +68,20 @@
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="67dp"
-            android:text="@string/clear" />
+            android:background="@android:color/black"
+            android:text="@string/clear"
+            android:textColor="@android:color/background_light" />
 
         <TextView
             android:id="@+id/displayDecimal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/binaryText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="27dp"
+            android:background="@color/Pink_Transparent"
             android:labelFor="@+id/decimalText"
+            android:textAlignment="center"
             android:textSize="36sp" />
 
         <TextView
@@ -81,7 +92,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="22dp"
             android:text="@string/binary"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_blue_bright"
             android:textSize="18sp" />
 
         <TextView
@@ -92,7 +103,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
             android:text="@string/decimal"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_blue_bright"
             android:textSize="18sp" />
 
     </RelativeLayout>
