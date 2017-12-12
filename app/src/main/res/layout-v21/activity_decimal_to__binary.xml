@@ -45,7 +45,7 @@
             android:text="@string/_0"
             android:textColor="@android:color/black"
 
-            android:textSize="36sp" tools:targetApi="lollipop"/>
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/displayBinary"
