@@ -7,6 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
+
+import com.google.android.gms.ads.MobileAds;
 
 public class Calculator extends AppCompatActivity {
     TextView displayBinary, displayDecimal;
@@ -14,10 +20,12 @@ public class Calculator extends AppCompatActivity {
     ImageButton arrow;
     int input, output;
     String inputString, outputString;
+    AdView moneyMaker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+    MobileAds.initialize(this, "ca-app-pub-2036959971024886~3829715441");
     input = 0;
     inputString = "";
     outputString = "";
@@ -27,6 +35,9 @@ public class Calculator extends AppCompatActivity {
     displayBinary =  findViewById(R.id.displayBinary);
     displayDecimal = findViewById(R.id.displayDecimal);
     arrow = findViewById(R.id.arrow);
+    moneyMaker = findViewById(R.id.adView);
+    AdRequest adRequest = new AdRequest.Builder().build();
+    moneyMaker.loadAd(adRequest);
     one.setOnClickListener(new View.OnClickListener(){
     public void onClick(View v) {
         inputString = inputString + "1";
